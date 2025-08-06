@@ -1,0 +1,10 @@
+word = "chupacabra"
+new_word = input("Please say a word: ")
+
+while new_word != word:
+    if new_word != word:
+        print("You are stuck in a loop")
+    new_word = input("Try again: ")
+    # break
+    if new_word == word:
+        print("You've successfully left the loop")
