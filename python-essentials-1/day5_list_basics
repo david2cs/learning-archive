@@ -1,0 +1,42 @@
+#step 1 creating the list and members
+beatles = []
+member1 = "Stu Sutcliffe"
+member2 = "Pete Best"
+print("Step 1:", beatles)
+#step 2 using append method to add members to the empty list
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("George Harrison")
+print("Step 2:", beatles)
+#step 3 for loop and append method to prompt the user to add correct members
+decision = int(input("""Who out of these duos were in the Beatles?:
+ 1. Jaloon Baloon and Jerry Boyboy
+ 2. Stu Sutcliffe and Pete Best
+ 3. Asparagus Maragus and Kilian Mbappe: """))
+if decision == 1:
+    print(int(input("Try again: ")))
+elif decision == 3:
+    print(int(input("Try again: ")))
+elif decision == 2:
+    for i in range(1):
+        beatles.append(member1)
+        beatles.append(member2)
+print("Step 3:", beatles)
+
+#step 4 using del instruction t remove member 1 and 2
+if len(beatles) >= 5:
+    del beatles[3]
+    del beatles[3]
+else:
+    print("Not enough members")
+
+print("Step 4:", beatles)
+
+#step 5 using insert to add a member at the start of the list
+beatles.insert(0, "Ringo Starr")
+print("Step 5:", beatles)
+
+
+#step 6 testing list length and content
+print("The lenght of this list is:", len(beatles))
+print("The Fab", len(beatles))
